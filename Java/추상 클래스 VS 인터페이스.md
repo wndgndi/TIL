@@ -45,7 +45,7 @@
 
 <br>
 
-*Exmaple*
+***Exmaple***
 
 아래와 같은 관계를 갖는 예제를 살펴본다.
 ![example](https://velog.velcdn.com/images%2Fnew_wisdom%2Fpost%2Faf9d99ef-28f2-483f-a261-161cb979fb4a%2Fimage.png)
@@ -67,7 +67,7 @@ Animal을 상속받는 Amazzi(사람), Dog, Cat은 Plant와 다르게 bark(짖�
 
 이때 바로 인터페이스로 따로 선언을 해주어 각각 eat을 할 수 있는 클래스에 implements 해주어 만들어 주면 가독성이 올라가며 유지보수 또한 쉬워진다.
 <Br>
-
+<br>
 ---
 
 ## 각각의 적절한 사용 케이스 정리
