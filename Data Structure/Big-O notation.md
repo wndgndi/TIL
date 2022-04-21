@@ -69,12 +69,10 @@ Big-O(또는 Big-Oh) notation은 알고리즘의 시간 복잡도를 나타내�
 ### [ 빅오 표기법 특징 ] 
 **1. 상수항 무시 :** 빅오 표기법은 데이터 입력값(n)이 충분히 크다고 가정하고 있고, 알고리즘의 효율성 또한 데이터 입력값(n)의 크기에 따라 영향 받기 때문에 상수항 같은 사소한 부분은 무시한다.  
 예를 들어, ![big-o](https://postfiles.pstatic.net/MjAyMjA0MDhfMTM1/MDAxNjQ5MzQ4NjczNzk1.K0aLsFByBU8lnosHqdWQhz_NwSBYyZkEMJGA83Sb8Ccg.uDg6_k7NF9DkY7Z_6wjQukuJNwEGhGTMo1tcHLfEan4g.PNG.wndgndi/12.png?type=w773)와 같은 상수항은 무시하고 표기한다.
+​
 
-<br>​
 
 **2. 영향력 없는 항 무시 :** 빅오 표기법은 데이터 입력값(n)의 크기에 따라 영향을 받기 때문에 가장 영향력이 큰 항에 이외에 영향력이 없는 항들은 무시한다.
-
-
 예를 들어, ![big-02](https://postfiles.pstatic.net/MjAyMjA0MDhfNjEg/MDAxNjQ5MzQ4NzkwMzY0.ZCQsCtT3_BMMGk53RyPK0KFaPVOoqduqMSm3OdL_6Zsg.ZP6rINUsbzIDw2XadWosLsWeHfGcfg6mSNsf0TtXNGYg.PNG.wndgndi/123.png?type=w773)와 같이 영향력이 지배적인 ![n^2](https://postfiles.pstatic.net/MjAyMjA0MDhfOCAg/MDAxNjQ5MzQ4ODE2MzQx.2h2_XnmHE4WuwS1S63pH4KxIBwri2aa_mLr4tDOCafQg.syPzGdkUGPjR0md5TIQswXS32__pTaU2ohm8rziAacUg.PNG.wndgndi/1.png?type=w773) 이외에 영향력이 없는 항들은 무시한다.
 
 ​<br>
