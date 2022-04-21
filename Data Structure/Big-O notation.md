@@ -23,6 +23,8 @@ Big-O(또는 Big-Oh) notation은 알고리즘의 시간 복잡도를 나타내�
 
 수학적으로는 아래와 같이 나타낼 수 있다.
 
+<br>
+
 ![Big-O](https://blog.kakaocdn.net/dn/cGhrhQ/btqGdRBPQ0a/ZsvHk2ax0tLkVDOHHjwkKK/img.jpg)
 ​
 
@@ -34,23 +36,16 @@ Big-O(또는 Big-Oh) notation은 알고리즘의 시간 복잡도를 나타내�
 ### [ 빅오 표기법의 종류 ]
 **O(1)** : 입력값에 상관없이 일정한 실행시간을 최고의 알고리즘이라 할 수 있다. 하지만 상수 시간에 실행된다 해도 상수값이 상상 이상으로 클 경우 사실상 일정한 시간의 의미가 없다. 최고의 알고리즘이 될 수 있지만 그만큼 신중해야 한다.
 
-​
 
 **O(log n)** : 로그는 매우 큰 입력값에서도 크게 영향을 받지 않는 편이다. 매우 견고한 알고리즘으로 이진 탐색의 경우가 이에 해당한다.
 
-​
-
 **O(n)** : 알고리즘을 수행하는데 걸리는 시간은 입력값에 비례한다. 이러한 알고리즘을 선형 시간 알고리즘이라 부른다. 정렬되지 않은 리스트에서 최대 또는 최솟값을 찾는 경우가 해당되며 모든 입렵값을 적어도 한 번 이상은 살펴봐야 한다.
 
-​
 
 **O(n log n)** : 병합 정렬등의 대부분 효율이 좋은 알고리즘이 이에 해당 한다. 아무리 좋은 알고리즘이라도 n log n 보다 빠를 수 없다. 입력값이 최선일 경우, 비교를 건너 뛰어 O(n)이 될 수 있다.
 
-
-
 **O(n^2)**  : 버블 정렬 같은 비효율저긴 정렬 알고리즘이 이에 해당 한다.
 ​
-
 **O(2^n)** : 피보나치의 수를 재귀로 계산하는 알고리즘이 이에 해당 한다. n^2와 혼동되는 경우가 있는데 2^n이 훨씬 더 크다.
 ​
 
@@ -69,15 +64,16 @@ Big-O(또는 Big-Oh) notation은 알고리즘의 시간 복잡도를 나타내�
 
 즉, 빠른 알고리즘은 공간을 많이 사용하고, 공간을 적게 차지하는 알고리즘은 실행 시간이 느리다는 것이다. 물론, 아닌 알고리즘도 드물게 존재하지만 대부분의 경우 트레이드오프 관계가 성립되며 이는 알고리즘의 주요한 특징 중 하나이다.
 
+<br>
+
 ### [ 빅오 표기법 특징 ] 
 **1. 상수항 무시 :** 빅오 표기법은 데이터 입력값(n)이 충분히 크다고 가정하고 있고, 알고리즘의 효율성 또한 데이터 입력값(n)의 크기에 따라 영향 받기 때문에 상수항 같은 사소한 부분은 무시한다.  
-
 예를 들어, ![big-o](https://postfiles.pstatic.net/MjAyMjA0MDhfMTM1/MDAxNjQ5MzQ4NjczNzk1.K0aLsFByBU8lnosHqdWQhz_NwSBYyZkEMJGA83Sb8Ccg.uDg6_k7NF9DkY7Z_6wjQukuJNwEGhGTMo1tcHLfEan4g.PNG.wndgndi/12.png?type=w773)와 같은 상수항은 무시하고 표기한다.
 
-​
+<br>​
+
 **2. 영향력 없는 항 무시 :** 빅오 표기법은 데이터 입력값(n)의 크기에 따라 영향을 받기 때문에 가장 영향력이 큰 항에 이외에 영향력이 없는 항들은 무시한다.
 
-​
 
 예를 들어, ![big-02](https://postfiles.pstatic.net/MjAyMjA0MDhfNjEg/MDAxNjQ5MzQ4NzkwMzY0.ZCQsCtT3_BMMGk53RyPK0KFaPVOoqduqMSm3OdL_6Zsg.ZP6rINUsbzIDw2XadWosLsWeHfGcfg6mSNsf0TtXNGYg.PNG.wndgndi/123.png?type=w773)와 같이 영향력이 지배적인 ![n^2](https://postfiles.pstatic.net/MjAyMjA0MDhfOCAg/MDAxNjQ5MzQ4ODE2MzQx.2h2_XnmHE4WuwS1S63pH4KxIBwri2aa_mLr4tDOCafQg.syPzGdkUGPjR0md5TIQswXS32__pTaU2ohm8rziAacUg.PNG.wndgndi/1.png?type=w773) 이외에 영향력이 없는 항들은 무시한다.
 
