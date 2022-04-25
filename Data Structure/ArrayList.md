@@ -47,6 +47,7 @@ ArrayLIst<String> list = new ArrayList<String>(); 이라고 되어있다면 Stri
 
 ***※제네릭스는 선언할 수 있는 타입이 객체 타입이다. int는 기본자료형이기 때문에 들어갈수 없으므로 int를 객체화시킨 wrapper클래스를 사용해야 한다.***
 <br>
+<br>
 
 ### [ ArrayList 값 추가 ]
 ```
