@@ -20,6 +20,7 @@ List<String> list = new ArrayList<>(100);
 ArrayList에서 특정 인덱스의 객체를 제거하게 되면, 제거한 객체의 인덱스부터 마지막 인덱스까지 모두 앞으로 1칸씩 앞으로 이동한다. 객체를 추가하게 되면 1칸씩 뒤로 이동하게 된다. 인덱스 값을 유지하기 위해서 전체 객체가 위치가 이동한다.
 즉, 인덱스의 추가나 제거가 발생할 시, 그 인덱스의 위치부터 마지막 인덱스까지 1칸 씩 이동한다.
 따라서 잦은 원소의 이동, 삭제가 발생할 경우 ArrayList보다 LinkedList를 사용하는 것이 좋다.
+
 ![arrayList](https://blog.kakaocdn.net/dn/qp1KU/btqEiLKhVVi/h1IfW46J1Ks7nu1DBvgUmk/img.png)
 
 ![arraylist2](https://blog.kakaocdn.net/dn/bpnfNy/btqD4yYYpRm/oJyzShR4aaqvFfz6Ol1YD0/img.jpg)
@@ -28,7 +29,7 @@ ArrayList에서 특정 인덱스의 객체를 제거하게 되면, 제거한 객
 
 ## ArrayList 사용법
 
-#### [ ArrayList 선언 ]
+### [ ArrayList 선언 ]
 ```
 ArrayList list = new ArrayList();  //타입 미설정 Object로 선언된다.
 ArrayList<Student> members = new ArrayList<Student>();  //타입설정 Student객체만 사용가능
@@ -47,7 +48,7 @@ ArrayLIst<String> list = new ArrayList<String>(); 이라고 되어있다면 Stri
 ***※제네릭스는 선언할 수 있는 타입이 객체 타입이다. int는 기본자료형이기 때문에 들어갈수 없으므로 int를 객체화시킨 wrapper클래스를 사용해야 한다.***
 <br>
 
-#### [ ArrayList 값 추가 ]
+### [ ArrayList 값 추가 ]
 ```
 ArrayList<Integer> list = new ArrayList<Integer>();
 list.add(3);  //값 추가
@@ -74,7 +75,7 @@ index를 생략하면 ArrayList 맨 뒤에 데이터가 추가되며 index중간
 
 <br>
 
-#### [ ArrayList 값 삭제 ]
+### [ ArrayList 값 삭제 ]
 ```
 ArrayList<Integer> list = new ArrayList<Integer>(Arrays.asList(1,2,3));
 list.remove(1);  //index 1 제거
@@ -88,7 +89,7 @@ ArrayList에 값을 제거하려면 ArrayList의 remove(index) 메소드를 사�
 
 <br>
 
-#### [ ArrayLits 크기 구하기 ]
+### [ ArrayLits 크기 구하기 ]
 ```
 ArrayList<Integer> list = new ArrayList<Integer>(Arrays.asList(1,2,3));
 System.out.println(list.size()); //list 크기 : 3
@@ -97,7 +98,7 @@ ArrayList의 크기를 구하려면 ArrayList의 size() 메소드를 사용하�
 
 <br>
 
-#### [ ArrayList 값 출력 ]
+### [ ArrayList 값 출력 ]
 ```
 ArrayList<Integer> list = new ArrayList<Integer>(Arrays.asList(1,2,3));
 
@@ -118,7 +119,7 @@ ArrayList의 get(index) 메소드를 사용하면 ArrayList의 원하는 index�
 
 <br>
 
-#### [ ArrayList 값 검색 ]
+### [ ArrayList 값 검색 ]
 
 ```
 ArrayList<Integer> list = new ArrayList<Integer>(Arrays.asList(1,2,3));
