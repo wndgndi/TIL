@@ -10,7 +10,7 @@ Stack의 가장 큰 특징은 나중에 들어간 것이 먼저 나오는 LIFO(L
 
 <Br>
 
-### Stack의 특징
+## Stack의 특징
 
 1. 먼저 들어간 자료가 나중에 나옴 LIFO(Last In First Out) 구조
 (스택은 탑(top)이라 하는 한쪽 끝에서 모든 삽입(push)과 삭제(pop)가 이루어진다. 쌓아 올린 동전을 생각하면 이해가 쉽다. 무너지지 않은 채, 동전을 쌓거나 내리려면 제일 윗 부분에서 작업을 해야 한다.)
@@ -29,13 +29,13 @@ Stack의 가장 큰 특징은 나중에 들어간 것이 먼저 나오는 LIFO(L
 
 <br>
 
-### Stack의 장점
+## Stack의 장점
 스택은 히스토리 역추적에 최적화 되어있다. 가장 최근에 일어난 이벤트부터 가장 이전에 일어난 이벤트 관리 시 스택을 사용하면 수월하다.
 문서 작업시 빈번히 사용하는 실행 취소(Undo) 및 복구(Redo)의 경우를 스택의 적용 예로 들 수 있다.
 
 <br>
 
-### Stack 사용법
+## Stack 사용법
 
 [ Stack 선언 ]
 ```
@@ -59,7 +59,7 @@ Stack에 값을 추가하고 싶다면 push(value)라는 메소드를 활용하�
 
 <br>
 
-[ Stack 값 삭제 ]
+## [ Stack 값 삭제 ]
 ```
 Stack<Integer> stack = new Stack<>(); //int형 스택 선언
 stack.push(1);     // stack에 값 1 추가
@@ -73,7 +73,7 @@ stack.clear();     // stack의 전체 값 제거 (초기화)
 
 <br>
 
-[ Stack의 가장 상단값 출력 ]
+## [ Stack의 가장 상단값 출력 ]
 ```
 Stack<Integer> stack = new Stack<>(); //int형 스택 선언
 stack.push(1);     // stack에 값 1 추가
@@ -83,5 +83,21 @@ stack.peek();     // stack의 가장 상단의 값 출력
 ```
 스택의 가장 위에 있는 값을 출력하고 싶다면 peek() 함수를 사용하면 된다. 아래 그림과 같이 가장 마지막에 들어간 값이 출력된다.
 ![stack5](https://blog.kakaocdn.net/dn/HfKZA/btqHgqLjLJG/mk3ViUTmahCubC86UCptK1/img.png)
+
+​<br>
+
+## [ Stack의 기타 메서드 ]
+```
+Stack<Integer> stack = new Stack<>(); //int형 스택 선언
+stack.push(1);     // stack에 값 1 추가
+stack.push(2);     // stack에 값 2 추가
+stack.size();      // stack의 크기 출력 : 2
+stack.empty();     // stack이 비어있는제 check (비어있다면 true)
+stack.contains(1) // stack에 1이 있는지 check (있다면 true)
+```
+그 밖에도 stack에는 크기를 구하는 size()메서드와 stack이 비어있는지 확인하는 empty() 메서드
+(비어있다면 true, 그렇지 않다면 false를 return) stack의 값을 search하는 contains(int value)함수가 있다.
+
+​
 
 ​
