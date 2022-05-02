@@ -64,3 +64,11 @@ public class Main {
         bw.close();
     }
 }
+
+
+
+
+back일 경우에 last를 출력하는 이유는, 어차피 큐의 마지막에 들어가 있는 정수는 가장 최근에 add 된 정수이기
+때문이다.
+
+
