@@ -62,7 +62,7 @@ public class SingletonService {
 
 3.  딱 1개의 객체 인스턴스만 존재해야 하므로, 생성자를 private으로 막아서 혹시라도 외부에서 new 키워드로 객체 인스턴스가 생성되는 것을 막는다.
 
-
+<br>
 
 <br>
 
@@ -97,7 +97,7 @@ public class SingletonTest {
     }
 }
 ```
-
+<br>
 <Br>
 
 위에서 생성한 singletonService 객체를 2개 생성하고 같은 객체를 반환하는지 확인해보자.
@@ -106,6 +106,7 @@ public class SingletonTest {
 ![singleton](https://blog.kakaocdn.net/dn/sg05e/btrrlS87JA4/bFR8GZcOhU2QgWPdBWZbzk/img.png)
 
 호출할 때마다 같은 객체 인스턴스를 반환하는 것을 확인할 수 있다.
+<br>
 
 ---
 
@@ -144,6 +145,7 @@ public class SingletonTest {
 
 - 스프링의 기본 빈 등록은 싱글톤이다.
 
+<br>
 
 ---
 ## [ 싱글톤 패턴 사용 시 주의할 점 및 알아야할 점 ]
@@ -280,3 +282,11 @@ public class Stateful {
 ```
 
 결과값은 상태 유지 코드의 결과값과 달리 상태가 유지 안되어서 "hoestory"가 나올 것이다.
+<br>
+
+---
+
+**싱글톤 패턴을 적용하면**
+
+**고객의 요청이 올 때마다 객체를 생성하는 것이 아니라,**
+**이미 만들어진 객체를 공유해서 효율적으로 사용할 수 있다.**
