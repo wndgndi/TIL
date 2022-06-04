@@ -37,8 +37,6 @@ Ex:
 
 ---
 
-<br>
-
 ## 제어의 역전 IoC (Inversion of Control)
 
 <br>
@@ -51,6 +49,8 @@ Ex:
 
 **한마디로, 스프링 프레임워크가 프로그램을 제어하는 것을 제어의 역전이라 한다.**
 스프링에서 개발자의 편의를 위해 제공되는 프로그램의 역할을 말하는 거라 생각면 된다.
+
+<br>
 
 ---
 
@@ -75,9 +75,9 @@ ApplicationContext (스프링 컨테이너) :
 
 ![context](https://blog.kakaocdn.net/dn/Xkij6/btrnqlgALm0/d09uwEjZT2dqU2jRL2Vcl0/img.png)
 
----
-
 <br>
+
+---
 
 ## 스프링 컨테이너란
 
@@ -102,8 +102,6 @@ ApplicationContext는 인터페이스이다.
 예) getBean(스프링.class)
 
 ---
-
-<br>
 
 ## BeanFactory vs ApplicationContext
 
