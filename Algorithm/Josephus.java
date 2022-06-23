@@ -16,37 +16,37 @@ public class Main {
         Queue<Integer> que = new LinkedList<>();
         StringBuilder sb = new StringBuilder();
 
-        String[] str = br.readLine().split(" ");
-        int n = Integer.parseInt(str[0]);
-        int k = Integer.parseInt(str[1]);
-        int cnt=1;
+        String[] str = br.readLine().split(" ");  // 입력받은 문자열을 공백을 구분자로 나눔
+        int n = Integer.parseInt(str[0]);  // str[0]을 정수로 변환
+        int k = Integer.parseInt(str[1]); // str[1]을 정수로 변환
+        int cnt=1;  // k번째 사람을 제거하기 위한 변수
 
         for(int i=1; i<=n; i++) {
-            que.add(i);
+            que.add(i);  // 큐에 n명을 넣어줌
         }
-        while(que.size()!=0) {
-            if (cnt==k) {
-                if(que.size()==n && n!=1) {
-                    sb.append("<" + que.poll() + ", ");
-                    cnt = 1;
+        while(que.size()!=0) {  // 큐의 크기가 0이 아닐 동안 반복
+            if (cnt==k) {  // k번째가 된다면
+                if(que.size()==n && n!=1) {  // 큐 크기가 n과 같을 경우
+                    sb.append("<" + que.poll() + ", ");  // sb에 '<'를 넣고 큐를 poll 해준다
+                    cnt = 1;  // 다시 k번째를 세기 위해 cnt를 1로 초기화 해준다.
                 }
-                else if(n==1) {
-                    sb.append("<" + que.poll() + ">");
+                else if(n==1) {   //  n이 1인 경우
+                    sb.append("<" + que.poll() + ">");  //  sb에 '< >' 과 큐를 poll 해준다
                 }
-                else {
-                    if (que.size() == 1) {
-                        sb.append(que.poll() + ">");
-                    } else {
-                        sb.append(que.poll() + ", ");
-                        cnt = 1;
+                else {   // 큐의 크기가 n과 다른 경우
+                    if (que.size() == 1) {  // 큐 크기가 1인 경우
+                        sb.append(que.poll() + ">");  // sb에 큐를 poll해주고 '>'를 넣는다.
+                    } else {  // 큐의 크기가 1이 아닌 경우
+                        sb.append(que.poll() + ", ");  // sb에 큐를 poll 해주고 ', '를 넣는다.
+                        cnt = 1;  //  k번째를 세기 위해 다시 cnt를 초기화
                     }
                 }
-            } else {
-                que.add(que.poll());
-                cnt++;
+            } else {   cnt가 k번째가 아닐 경우
+                que.add(que.poll());  // 큐를 poll해서 다시 add 해준다
+                cnt++;  // cnt가 1씩 증가
             }
         }
-        bw.write(sb.toString());
+        bw.write(sb.toString());  // sb를 출력해준다
         bw.flush();
         bw.close();
     }
