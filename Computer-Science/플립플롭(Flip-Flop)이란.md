@@ -113,6 +113,7 @@
 ![flip](https://blog.kakaocdn.net/dn/ZNzKc/btrbyIa2dpY/p9FtzOk1AgYNmhpQNkU1r0/img.png)
 
 <br>
+<br>
 
 ### [ JK Flip-Flop ]
 ![jk](https://blog.kakaocdn.net/dn/cETY79/btrbq37V3PB/IMTzgFsetnb9dpRVzrdk71/img.png)
@@ -123,6 +124,7 @@
 
 -  J와 K의 입력이 동시에 1이 입력되면 플립플롭의 출력은 이전 출력의 보수 상태로 변화하게 된다.   
 
+<br>
 <br>
 
 ### [ D Flip-Flop ]
@@ -135,6 +137,7 @@
 -  데이터(Data)를 전달하는 것과 지연(Delay)을 의미하는 D 플립플롭이라고 한다.  
 
 <Br>
+<br>
 
 ### [ T Flip-Flop ]
 ![T](https://blog.kakaocdn.net/dn/7rvoc/btrbuKfLFvW/hbGP4jwb3Jnx9412ahS9BK/img.png)
