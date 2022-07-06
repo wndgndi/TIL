@@ -1,15 +1,14 @@
 ## RAM Memory의 물리적 동작
 
 Memory는 이렇게 생겼다.
+
+<br>
+
 ![ram](https://postfiles.pstatic.net/MjAyMjA2MjRfMTMy/MDAxNjU2MDU0OTExOTk4.lxzQrVKv3op3s76XRwmEC4MC7ipSRnAJqP56nV8XqMgg.YXmUXUpehon4F0pbabp_hJEElNIPYP7KRqybhRIzVIAg.PNG.wndgndi/image.png?type=w773)
 
 <br>
 
-Address Pin과 Data pin으로 구성되어 있으며, 나머지는 RD (Read), WR (Write) pin으로 구성되어 
-
-있다. 
-
-RD는 Memory로부터 Data를 읽을 때, WR은 Memory에 Data를 Write할 때 사용하는 pin이고, **A[0]~ A[7]은 Address pin, D[0]~D[7]은 Data pin이다.** 
+Address Pin과 Data pin으로 구성되어 있으며, 나머지는 RD (Read), WR (Write) pin으로 구성되어 있다. RD는 Memory로부터 Data를 읽을 때, WR은 Memory에 Data를 Write할 때 사용하는 pin이고, **A[0]~ A[7]은 Address pin, D[0]~D[7]은 Data pin이다.** 
 
 
 Address는 개수가 8개니까, 2^8 가지 *(각 pin 마다 0 아니면 1을 가질 수 있기 때문)* Address를 나타낼 수 있다. 0 ~ 2^8-1 주소만큼을 Memory가 처리할 수 있는 것이다. 
