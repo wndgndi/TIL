@@ -67,3 +67,38 @@ API는 손님(프로그램)이 주문할 수 있게 메뉴(명령 목록)를 정
 
 ​
 API는 이제, 데이터 기반 비즈니스를 운영하는 데 필수적이다. API를 통해 비즈니스 사용자와 IT 부서는 소프트웨어와 애플리케이션을 활용하여 생산성을 높이고 수익을 개선 할 수 있다. 혁신적인 고객 지원 접근 방식에 이르기까지 API를 활용하면 편리하다.
+
+---
+
+## API의 접근 방식
+
+<br>
+
+![access](https://postfiles.pstatic.net/MjAyMjA3MDVfMTAg/MDAxNjU2OTU2OTQ3Mzk3.OKfGT7eVVswZgBUrGK9PPm7CVRgtvdDqlZ_4x-lIxvog.rVlSBdWXYkuax3aIe6shON3fA7OUkJO7gM_prOoVLLkg.PNG.wndgndi/SE-f366786f-2d2b-4f04-bf77-24696f6f1721.png?type=w773)
+
+<br>
+
+**API의 접근 방식에는 크게 세 가지가 존재한다.**  
+
+
+●  Private API 
+: API를 기업이나 연구 단체 등에서 사용하는 다양한 애플리케이션과 시스템의 통합을 위해 사용하는 것으로 단체 내부에서만 사용할 수 있도록 하는 것이다. 
+
+​
+
+●  Partner API 
+
+: API를 특정 비즈니스 파트너와 공유하는 것으로, 공유받은 API를 품질 저하 없이 사용할 수 있으며 수익 창출을 목표로 사용하는 것이다.
+
+​
+
+●  Public API
+
+: 모든 사람들에게 API를 제공하는 것으로, 개인이 API와 상호작용하는 프로그램을 무료로 개발할 수 있다.   
+다양한 아이디어를 통해 혁신적인 프로그램의 등장을 목표로 사용되고 있다.
+
+---
+
+## Open API 
+
+Open API란, 회사내부에서 사용하는 Web API를 외부의 다른 개발자가 이용할 수 있도록 공개적으로 오픈한 것으로, 외부 사이트와 자유롭게 활용 및 공유되도록 설계되었다.
