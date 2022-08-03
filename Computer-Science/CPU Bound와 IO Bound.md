@@ -17,7 +17,7 @@ I/O Bound 프로세스는 예를 들어 게임이 있다. *( 항상 사용자 �
 
 ​
 
-CPU Burst 와 I/O Burst 는 각각이 실행되는 시간을 의미
+***CPU Burst 와 I/O Burst 는 각각이 실행되는 시간을 의미***
 
 <br>
 
