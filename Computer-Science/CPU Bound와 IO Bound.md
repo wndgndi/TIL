@@ -32,3 +32,20 @@ I/O Bound 프로세스는 예를 들어 게임이 있다. *( 항상 사용자 �
 
  :  I/O 를 요청한 뒤 기다리는 시간
  ```
+
+<Br>
+ ---
+
+## CPU Bound
+
+
+CPU Bound는 프로세스가 진행될 때, CPU 사용 기간이 I/O Wating 보다 많은 경우다. 주로 행렬 곱이나 고속 연산을 할 때 나타나며 CPU 성능에 의해 작업 속도가 결정된다.
+
+<br>
+
+![cpu bound](https://velog.velcdn.com/images%2Fcarrykim%2Fpost%2F5b267c31-7456-4590-9102-354d1f531ea9%2Fimage.png)
+
+<Br>
+
+---
+
