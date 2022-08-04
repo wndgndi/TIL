@@ -34,7 +34,8 @@ I/O Bound 프로세스는 예를 들어 게임이 있다. *( 항상 사용자 �
  ```
 
 <Br>
- ---
+
+---
 
 ## CPU Bound
 
@@ -49,3 +50,12 @@ CPU Bound는 프로세스가 진행될 때, CPU 사용 기간이 I/O Wating 보�
 
 ---
 
+## I/O Bound
+
+​
+반면 I/O Bound는 프로세스가 진행될 때, I/O Wating 시간이 많은 경우다. 
+파일 쓰기, 디스크 작업, 네트워크 통신을 할 때 주로 나타나며 작업에 의한 병목 (*다른 시스템과 통신할 때 나타남*)에 의해 작업 속도가 결정된다.
+
+<Br>
+
+![I/O Bound](https://velog.velcdn.com/images%2Fcarrykim%2Fpost%2F14e0a97d-0df8-40f1-a345-e5a57605eef6%2Fimage.png)
