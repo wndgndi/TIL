@@ -75,6 +75,7 @@ CPU의 성능이 향상되거나 개수가 추가되면 CPU Bound의 작업 처�
 ![cpu Bound](https://velog.velcdn.com/images%2Fcarrykim%2Fpost%2F81cc6ea4-b8ec-462a-a2cb-d98c02c6b5cd%2Fimage.png)
 
 <br>
+<br>
 
 반면, I/O Bound의 경우에는 CPU 성능보다 타 시스템과의 병목 부분(I/O Wating)에 큰 영향을 받기 
 
