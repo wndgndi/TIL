@@ -62,6 +62,8 @@ CPU Bound는 프로세스가 진행될 때, CPU 사용 기간이 I/O Wating 보�
 
 <br>
 
+---
+
 ## CPU 성능 향상에 따른 작업 처리 성능
 
 <br>
@@ -70,10 +72,14 @@ CPU의 성능이 향상되거나 개수가 추가되면 CPU Bound의 작업 처�
 
 <br>
 
-![cpu](https://velog.velcdn.com/images%2Fcarrykim%2Fpost%2F81cc6ea4-b8ec-462a-a2cb-d98c02c6b5cd%2Fimage.png)
+![cpu Bound](https://velog.velcdn.com/images%2Fcarrykim%2Fpost%2F81cc6ea4-b8ec-462a-a2cb-d98c02c6b5cd%2Fimage.png)
 
 <br>
 
 반면, I/O Bound의 경우에는 CPU 성능보다 타 시스템과의 병목 부분(I/O Wating)에 큰 영향을 받기 
 
 때문에 스레드 개수를 늘리거나 동시성을 활용한다. 따라서 성능 향상을 위해 scale-out을 주로 사용한다.
+
+<br>
+
+![IOBound](https://velog.velcdn.com/images%2Fcarrykim%2Fpost%2F9865edd3-7b1f-474a-9656-3555be1e92d9%2Fimage.png)
