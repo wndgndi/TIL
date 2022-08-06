@@ -84,3 +84,39 @@ CPU의 성능이 향상되거나 개수가 추가되면 CPU Bound의 작업 처�
 <br>
 
 ![IOBound](https://velog.velcdn.com/images%2Fcarrykim%2Fpost%2F9865edd3-7b1f-474a-9656-3555be1e92d9%2Fimage.png)
+
+<br>
+
+---
+
+## 병렬 프로그래밍 방법 선택
+
+​
+
+### [ Multiprocessing 방식 ]
+
+multiprocessing 방식은 Multiple processes를 사용하며 고가용성(CPU) Utilization와 같은 
+
+CPU-bound Application 처리에 적합하다.
+
+*→ 10개의 부엌, 10명의 요리사, 10개의 요리*
+
+​
+
+### [ Multithreading ]
+
+multithreading 방식은 Single(Multi) process, Multiple threads를 사용하며 I/O Bound 중에서 
+
+빠르게 처리해야하는 Application에 적합하다.
+
+*→ 1개의 부엌, 10명의 요리사, 10개의 요리*
+
+​
+
+### [ Async IO ]
+
+Async IO는 Single process, single thread를 활용하며 I/O Bound 중 천천히 처리해도 괜찮은 Application에 적합하다.
+
+*→ 1개의 부엌, 1명의 요리사, 10개의 요리*
+
+
