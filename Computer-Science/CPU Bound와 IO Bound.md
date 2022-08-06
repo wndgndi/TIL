@@ -99,7 +99,7 @@ multiprocessing 방식은 Multiple processes를 사용하며 고가용성(CPU) U
 
 CPU-bound Application 처리에 적합하다.
 
-*→ 10개의 부엌, 10명의 요리사, 10개의 요리*
+***→ 10개의 부엌, 10명의 요리사, 10개의 요리***
 
 ​
 
@@ -109,7 +109,7 @@ multithreading 방식은 Single(Multi) process, Multiple threads를 사용하며
 
 빠르게 처리해야하는 Application에 적합하다.
 
-*→ 1개의 부엌, 10명의 요리사, 10개의 요리*
+***→ 1개의 부엌, 10명의 요리사, 10개의 요리***
 
 ​
 
@@ -117,6 +117,8 @@ multithreading 방식은 Single(Multi) process, Multiple threads를 사용하며
 
 Async IO는 Single process, single thread를 활용하며 I/O Bound 중 천천히 처리해도 괜찮은 Application에 적합하다.
 
-*→ 1개의 부엌, 1명의 요리사, 10개의 요리*
+***→ 1개의 부엌, 1명의 요리사, 10개의 요리***
+
+<br>
 
 
