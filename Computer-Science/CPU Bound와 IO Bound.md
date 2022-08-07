@@ -121,4 +121,6 @@ Async IO는 Single process, single thread를 활용하며 I/O Bound 중 천천�
 
 <br>
 
+![multi](https://velog.velcdn.com/images%2Fcarrykim%2Fpost%2F16b41eb5-c556-48d4-82e5-7b2c0fe70d32%2Fimage.png)
+
 
