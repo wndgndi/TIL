@@ -1,3 +1,8 @@
+20053번 문제
+
+N개의 정수가 주어진다. 이때, 최솟값과 최댓값을 구하는 프로그램을 작성하시오.
+​
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
