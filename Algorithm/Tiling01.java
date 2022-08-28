@@ -34,3 +34,32 @@ public class Main {
         System.out.println(dp[n]);  // n번째 인덱스를 출력
     }
 }
+
+
+
+< 실패 코드 >
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        int n = Integer.parseInt(br.readLine());
+
+        long[] dp = new long[n+1];
+        dp[1] = 1;
+        dp[2] = 2;
+        dp[3] = 3;
+
+        for(int i=4; i<=n; i++) {
+            dp[i] = dp[i - 1] + dp[i - 2];
+        }
+        System.out.println(dp[n]%15746);
+    }
+}
+
+마지막에 출력할 때만  %15746 을 적용시켰더니 오답 처리가 되었다.
+dp의 값이 매우 커질 수 있으므로 더할 때마다 나눠준다.
