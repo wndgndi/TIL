@@ -4,6 +4,7 @@
 예를 들어, 문서가 abababa이고, 그리고 찾으려는 단어가 ababa라면, 세준이의 이 함수는 이 단어를 0번부터 찾을 수 있고, 2번부터도 찾을 수 있다. 그러나 동시에 셀 수는 없다.
 세준이는 문서와 검색하려는 단어가 주어졌을 때, 그 단어가 최대 몇 번 중복되지 않게 등장하는지 구하는 프로그램을 작성하시오.
 
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -29,3 +30,5 @@ public class Main {
         System.out.println(cnt);   // 개수 cnt를 출력
     }
 }
+
+while(sb.toString().indexOf(str2) != -1)은  while(str1.contain(str2))와 비슷하다고 볼 수 있다.
