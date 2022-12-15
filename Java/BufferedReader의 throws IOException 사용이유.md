@@ -1,3 +1,5 @@
+readLine() 을 들어가 보았다.
+
 ![readLine](https://blog.kakaocdn.net/dn/9w1xj/btqEW4Khtqz/CGQ5C4yuueLBu7fSdKuOQ0/img.png)
 
 <br>
@@ -25,6 +27,6 @@ in이 null이라는건 Reader(여기서는 키보드와의 connection) 가 프�
 
 <br>
 
-**결론 : readLine() 에서 throwsException 하는 이유는 InputStream==null 일때의 장애를 대비해서 미리 예외처리를 해줘야했던것.**
+#### 결론 : readLine() 에서 throwsException 하는 이유는 InputStream==null 일때의 장애를 대비해서 미리 예외처리를 해줘야했던것.
 
 ​
