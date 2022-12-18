@@ -10,7 +10,7 @@ Lv1. 비밀지도 문제
 네오가 프로도의 비상금을 손에 넣을 수 있도록, 비밀지도의 암호를 해독하는 작업을 도와줄 프로그램을 작성하라.
 
 
-< 코드 >
+< 코드 1 >
 
 class Solution {
     public String[] solution(int n, int[] arr1, int[] arr2) {
@@ -61,5 +61,27 @@ class Solution {
         }
         
         return answer;    // answer를 반환
+    }
+}
+
+
+
+< 코드 2 >
+
+class Solution {
+    public String[] solution(int n, int[] arr1, int[] arr2) {
+        String[] answer = new String[n];
+        String tmp = "";
+        
+        for(int i=0; i<n; i++) {   // n번만큼 반복
+            tmp = String.format("%16s", Integer.toBinaryString(arr1[i] | arr2[i]));  
+            // arr1[i]와 arr2[i]를 16자리 이진수로 변환하여 하나라도 1이면 1인 이진수로 만들어 줌
+            tmp = tmp.substring(tmp.length() - n);   // tmp의 길이에서 n만큼 잘라줌
+            tmp = tmp.replace("1", "#");   //  "1"을 "#"으로 대체
+            tmp = tmp.replace("0", " ");   //  "0"을 " "으로 대체
+            answer[i] = tmp;   // answer의 i번째 인덱스에 tmp를 넣어줌
+        }
+        
+        return answer;   // answer를 반환
     }
 }
