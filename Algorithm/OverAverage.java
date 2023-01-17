@@ -56,3 +56,4 @@ for i in range(n):  // n번만큼 반복
     over = len(list(filter(lambda x: x > mean, num_list)))   // 평균 이상의 학생 수 구함
 
     print("{:.3f}".format(over/student*100) + "%")  // 평균 이상의 비율을 소수점 셋째 자리까지 출력
+    
