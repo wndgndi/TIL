@@ -1,15 +1,7 @@
+import java.util.stream.IntStream;
+
 class Solution {
     public int solution(int a, int d, boolean[] included) {
-        int answer = 0;
-        int n = a;
-        
-        for(int i=0; i<included.length; i++) {
-            if(included[i] == true) {
-                answer += n;   
-            }
-            n += d;
-        }
-        
-        return answer;
+        return IntStream.range(0, included.length).map(i -> included[i]?a+(i*d):0).sum();
     }
 }
