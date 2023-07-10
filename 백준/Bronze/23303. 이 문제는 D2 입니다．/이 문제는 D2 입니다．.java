@@ -3,6 +3,8 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Main {
 
@@ -11,12 +13,11 @@ public class Main {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         String name = br.readLine();
+        Pattern pattern = Pattern.compile("(?i)D2");
+        Matcher matcher = pattern.matcher(name);
 
-        if(name.contains("d2") || name.contains("D2")) {
-            bw.write("D2");
-        } else {
-            bw.write("unrated");
-        }
+        if(matcher.find()) bw.write("D2");
+        else bw.write("unrated");
 
         bw.flush();
         bw.close();
