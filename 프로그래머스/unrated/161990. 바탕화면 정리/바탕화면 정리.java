@@ -1,30 +1,16 @@
 import java.util.*;
 
 class Solution {
-    public int[] solution(String[] wallpaper) {
-        String[][] wallpapers = new String[wallpaper.length][wallpaper[0].length()];
+    public int[] solution(String[] wallpaper) {        
+        int lux = 50, luy = 50, rdx = 0, rdy = 0;
         
-        for(int i=0; i<wallpapers.length; i++) {
-            wallpapers[i] = wallpaper[i].split("");
-        }
-        
-        int lux = -1, luy = 50, rdx = 0, rdy = 0;
-        
-        for(int i=0; i<wallpapers.length; i++) {
-            for(int j=0; j<wallpapers[i].length; j++) {
-                if(wallpapers[i][j].equals("#")) {
-                    if(lux == -1) {
-                        lux = i;
-                    }
-                    if(j < luy) {
-                        luy = j;
-                    }
-                    if(i > rdx) {
-                        rdx = i;
-                    }
-                    if(j > rdy) {
-                        rdy = j;
-                    }
+        for(int i=0; i<wallpaper.length; i++) {
+            for(int j=0; j<wallpaper[i].length(); j++) {
+                if(wallpaper[i].charAt(j) == '#') {
+                    lux = Math.min(lux, i);
+                    luy = Math.min(luy, j);
+                    rdx = Math.max(rdx, i);
+                    rdy = Math.max(rdy, j);
                 }
             }
         }
