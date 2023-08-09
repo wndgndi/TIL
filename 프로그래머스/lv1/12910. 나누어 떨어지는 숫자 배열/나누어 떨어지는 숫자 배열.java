@@ -2,25 +2,29 @@ import java.util.*;
 
 class Solution {
     public int[] solution(int[] arr, int divisor) {
-        List<Integer> list = new ArrayList<>();
+        int[] answer;
+        int cnt = 0;
         
         for(int i=0; i<arr.length; i++) {
             if(arr[i] % divisor == 0) {
-                list.add(arr[i]);
+                cnt++;
             }
         }
         
-        if(list.size() == 0) {
-            list.add(-1);
+        if(cnt != 0) {
+            answer = new int[cnt];
+            int idx = 0;
+            
+            for(int i=0; i<arr.length; i++) {
+                if(arr[i] % divisor == 0) {
+                    answer[idx] = arr[i];
+                    idx++;
+                }
+            }
+            Arrays.sort(answer);
+        } else { 
+            answer = new int[]{-1};
         }
-                
-        int[] answer = new int[list.size()];
-        
-        for(int i=0; i<list.size(); i++) {
-            answer[i] = list.get(i);
-        }
-        
-        Arrays.sort(answer);
 
         return answer;
     }
