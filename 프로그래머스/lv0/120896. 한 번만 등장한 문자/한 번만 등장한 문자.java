@@ -1,16 +1,30 @@
-import java.util.Arrays;
-import java.util.Map;
-import java.util.stream.Collectors;
+import java.util.*;
 
 class Solution {
     public String solution(String s) {
-        return Arrays.stream(s.split(""))
-                .collect(Collectors.groupingBy(s1 -> s1))
-                .entrySet()
-                .stream()
-                .filter(entry -> entry.getValue().size() <= 1)
-                .map(Map.Entry::getKey)
-                .sorted()
-                .collect(Collectors.joining());
+        String answer = "";
+        List<Character> list = new ArrayList<>();
+        Map<Character, Integer> map = new HashMap<>();
+        StringBuilder sb = new StringBuilder();
+        
+        for(int i=0; i<s.length(); i++) {
+            map.put(s.charAt(i), map.getOrDefault(s.charAt(i), 0) + 1);
+        }
+        
+        for(char c:map.keySet()) {
+            if(map.get(c) == 1) {
+                list.add(c);
+            }
+        }
+
+        Collections.sort(list);
+
+        for(int i=0; i<list.size(); i++) { 
+            sb.append(list.get(i));
+        }
+        
+        answer = sb.toString();
+        
+        return answer;
     }
 }
