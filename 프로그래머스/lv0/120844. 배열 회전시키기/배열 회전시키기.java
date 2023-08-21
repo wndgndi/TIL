@@ -2,22 +2,24 @@ import java.util.*;
 
 class Solution {
     public int[] solution(int[] numbers, String direction) {
-        int[] answer = Arrays.copyOf(numbers, numbers.length);
+        List<Integer> list = new ArrayList<>();
         
         for(int i=0; i<numbers.length; i++) {
-            if("right".equals(direction)) {
-                if(i == answer.length-1) {
-                    answer[0] = numbers[numbers.length-1];
-                } else {
-                    answer[i+1] = numbers[i];
-                }
-            } else if("left".equals(direction)) {
-                if(i == answer.length-1) {
-                    answer[answer.length-1] = numbers[0];
-                } else {
-                    answer[i] = numbers[i+1];
-                }
-            }
+            list.add(numbers[i]);    
+        }
+        
+        if("right".equals(direction)) {
+            list.add(0, list.get(list.size()-1));
+            list.remove(list.size()-1);
+        } else {
+            list.add(list.get(0));
+            list.remove(0);
+        }
+
+        int[] answer = new int[list.size()];
+        
+        for(int i=0; i<answer.length; i++) {
+            answer[i] = list.get(i);
         }
         
         return answer;
