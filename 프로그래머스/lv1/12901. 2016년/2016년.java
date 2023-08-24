@@ -5,9 +5,7 @@ class Solution {
         String answer = "";
         
         LocalDate date = LocalDate.of(2016, a, b);
-        String day = date.getDayOfWeek().toString();
-        
-        answer = day.substring(0,3).toUpperCase();
+        answer = date.getDayOfWeek().toString().substring(0,3);     
         
         return answer;
     }
