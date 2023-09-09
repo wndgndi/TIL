@@ -11,15 +11,7 @@ public class Main {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         long n = Integer.parseInt(br.readLine());
-        long cnt = 1;
-
-        for (long i = n; i > n-3; i--) {
-            cnt *= i;
-        }
-
-        for(int i=1; i<=3; i++) {
-            cnt /= i;
-        }
+        long cnt = (n * (n-1) * (n-2) / 6);
 
         bw.write(cnt + "\n" + 3);
         bw.flush();
