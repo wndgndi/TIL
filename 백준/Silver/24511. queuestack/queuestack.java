@@ -1,45 +1,45 @@
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.StringTokenizer;
-
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringBuilder sb = new StringBuilder();
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        int N = Integer.parseInt(br.readLine()); 
+        int n = Integer.parseInt(br.readLine());
 
-        int[] typeArr = new int[N]; 
+        String[] type = br.readLine().split(" ");
 
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        for(int i = 0; i < N; i++){
-            typeArr[i] = Integer.parseInt(st.nextToken());
-        }
+        Deque<String> deque = new ArrayDeque<>();
 
-        Deque<Integer> deque = new ArrayDeque<>();
-
-        st = new StringTokenizer(br.readLine());
-        for(int i = 0; i < N; i++){
-            int num = Integer.parseInt(st.nextToken());
-            if(typeArr[i] == 0){
-                deque.addLast(num);
+        int idx = 0;
+        while (st.hasMoreTokens()) {
+            String str = st.nextToken();
+            if("0".equals(type[idx++])) {
+               deque.add(str);
             }
         }
 
-        int M = Integer.parseInt(br.readLine());
-        st = new StringTokenizer(br.readLine());
-        br.close();
+        int m = Integer.parseInt(br.readLine());
 
-        while(M --> 0){
-            int moveValue = Integer.parseInt(st.nextToken());
-            deque.addFirst(moveValue);
-            sb.append(deque.pollLast()).append(" ");
+        String[] insert = br.readLine().split(" ");
+
+        for(int i=0; i<m; i++) {
+            deque.addFirst(insert[i]);
+            bw.write(deque.pollLast() + " ");
         }
 
-        System.out.println(sb);
+        bw.flush();
+        bw.close();
+
     }
 }
