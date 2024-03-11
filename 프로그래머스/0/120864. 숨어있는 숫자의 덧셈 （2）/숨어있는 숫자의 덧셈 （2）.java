@@ -5,7 +5,6 @@ class Solution {
         int answer = 0;
         
         String[] numbers = my_string.split("\\D+");
-        System.out.println(Arrays.toString(numbers));
         
         for(int i=0; i<numbers.length; i++) {
             if(!numbers[i].equals("")) {
