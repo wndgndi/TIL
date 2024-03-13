@@ -11,11 +11,9 @@ class Solution {
             yj.add(i);
             dlvy.add(order[i-1]);
         }
-            
-        int size = dlvy.size();
-        
+                    
         loop:
-        for(int i=0; i<size; i++) {
+        for(int i=0; i<order.length; i++) {
             while(true) {
                 if(!yj.isEmpty()) {
                     if(yj.peek().intValue() == dlvy.get(0)) {
