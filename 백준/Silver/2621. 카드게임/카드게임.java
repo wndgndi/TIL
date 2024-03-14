@@ -26,7 +26,7 @@ public class Main {
     StringTokenizer st = new StringTokenizer(br.readLine());
     String c = st.nextToken();
     int n = Integer.parseInt(st.nextToken());
-    color.putIfAbsent(n, new ArrayList<>());
+    color.put(n, new ArrayList<>());
     color.get(n).add(c);
     nums[0] = n;
     int cnt = 1;
