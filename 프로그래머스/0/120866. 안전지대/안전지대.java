@@ -6,14 +6,6 @@ class Solution {
         int[] dx = {-1, 0, 1};
         int[] dy = {-1, 0, 1};
         
-        if(board.length == 1) {
-            if(board[0][0] == 1) {
-                return 0;
-            } else {
-                return 1;
-            }
-        }
-        
         for(int i=0; i<board.length; i++) {
             for(int j=0; j<board[i].length; j++) {
                 if(board[i][j] == 1) {
