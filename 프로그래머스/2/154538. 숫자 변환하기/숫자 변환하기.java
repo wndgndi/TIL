@@ -6,8 +6,9 @@ class Solution {
             return 0;
         }
         
-        for(int i=x; i<y; i++) {
+        for(int i=x; i<=y; i++) {
             if(i != x && dp[i] == 0) {
+                dp[i] = -1;
                 continue;   
             }
             
