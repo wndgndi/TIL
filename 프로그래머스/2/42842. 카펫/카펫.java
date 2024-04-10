@@ -6,8 +6,7 @@ class Solution {
         int length = 1;
         
         while(true) {
-            if(((width - 2) % yellow == 0 || yellow % (width - 2) == 0) 
-               && (width - 2) * length == yellow) {
+            if((width - 2) * length == yellow) {
                 answer[0] = width;
                 answer[1] = length + 2;
                 break;
