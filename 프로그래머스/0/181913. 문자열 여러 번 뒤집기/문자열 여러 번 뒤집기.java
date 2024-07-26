@@ -7,11 +7,7 @@ class Solution {
 
             String a = my_string.substring(0, queries[i][0]);
             String b = my_string.substring(queries[i][0], queries[i][1] + 1);
-            String c = "";
-            
-            if(queries[i][1] < my_string.length() - 1) {
-                c = my_string.substring(queries[i][1] + 1, my_string.length());
-            }
+            String c = my_string.substring(queries[i][1] + 1, my_string.length());
             
             b = sb.append(b).reverse().toString();
             sb = new StringBuilder();
